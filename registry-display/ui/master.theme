@@ -1,0 +1,11 @@
+<Label class="sub">
+    <colour>lightGrey</colour>
+</Label>
+
+<Label class="header">
+    <colour important>white</colour>
+</Label>
+
+<Container class="header">
+    <backgroundColour>lightBlue</backgroundColour>
+</Container>

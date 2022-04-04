@@ -1,0 +1,8 @@
+<Container X=1 Y=1 width=1 height=1 id="outer_container" projector="monitor">
+    <Container X=1 Y=1 width="$parent.width" height=3 class="header">
+        <Label X="$parent.width / 2 - #self.text / 2" Y=2 class="header">ENDER REGISTRY</Label>
+    </Container>
+
+    <ScrollContainer id="scroll_container" X=1 Y=4 width="$parent.width" height="$parent.height - 3">
+    </ScrollContainer>
+</Container>

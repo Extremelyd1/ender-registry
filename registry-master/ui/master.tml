@@ -1,0 +1,11 @@
+<TabbedPageContainer Z=1 X=1 Y=1 width="$application.width" height="$application.height">
+    <Page id="registry_page" name="Registry" xScrollAllowed="false">
+        <ScrollContainer id="registry_container" X=1 Y=1 width="$parent.width" height="$parent.height">
+        </ScrollContainer>
+    </Page>
+
+    <Page id="log_page" name="Log" xScrollAllowed="false">
+        <ScrollContainer id="log_container" X=1 Y=1 width="$parent.width" height="$parent.height">
+        </ScrollContainer>
+    </Page>
+</TabbedPageContainer>

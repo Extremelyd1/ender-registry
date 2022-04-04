@@ -1,0 +1,107 @@
+<TabbedPageContainer Z=1 X=1 Y=1 width="$application.width" height="$application.height" id="mainContainer">
+    <Page id="colors" name="Colors" xScrollAllowed="false">
+        <Label X=2 Y=2 class="header">Ender Registry</Label>
+        <Label X=2 Y=3 class="sub">Select a color code</Label>
+
+        <Pane X=4 Y=6 Z=2 width=11 height=4 id="first_color_pane" />
+
+        <Dropdown X=2 Y=11 width=15 maxHeight=7 Z=3 class="color_select" colorIndex="1">
+            <Option value="2" >Orange         </Option>
+            <Option value="3" >Magenta        </Option>
+            <Option value="4" >Light Blue     </Option>
+            <Option value="5" >Yellow         </Option>
+            <Option value="6" >Lime           </Option>
+            <Option value="7" >Pink           </Option>
+            <Option value="8" >Gray           </Option>
+            <Option value="9" >Light Gray     </Option>
+            <Option value="10">Cyan           </Option>
+            <Option value="11">Purple         </Option>
+            <Option value="12">Blue           </Option>
+            <Option value="13">Brown          </Option>
+            <Option value="14">Green          </Option>
+            <Option value="15">Red            </Option>
+            <Option value="16">Black          </Option>
+        </Dropdown>
+
+        <Pane X=21 Y=6 Z=2 width=11 height=4 id="second_color_pane" />
+
+        <Dropdown X=19 Y=11 width=15 maxHeight=7 Z=3 class="color_select" colorIndex="2">
+            <Option value="2" >Orange         </Option>
+            <Option value="3" >Magenta        </Option>
+            <Option value="4" >Light Blue     </Option>
+            <Option value="5" >Yellow         </Option>
+            <Option value="6" >Lime           </Option>
+            <Option value="7" >Pink           </Option>
+            <Option value="8" >Gray           </Option>
+            <Option value="9" >Light Gray     </Option>
+            <Option value="10">Cyan           </Option>
+            <Option value="11">Purple         </Option>
+            <Option value="12">Blue           </Option>
+            <Option value="13">Brown          </Option>
+            <Option value="14">Green          </Option>
+            <Option value="15">Red            </Option>
+            <Option value="16">Black          </Option>
+        </Dropdown>
+
+        <Pane X=38 Y=6 Z=2 width=11 height=4 id="third_color_pane" />
+
+        <Dropdown X=36 Y=11 width=15 maxHeight=7 Z=3 class="color_select" colorIndex="3">
+            <Option value="2" >Orange         </Option>
+            <Option value="3" >Magenta        </Option>
+            <Option value="4" >Light Blue     </Option>
+            <Option value="5" >Yellow         </Option>
+            <Option value="6" >Lime           </Option>
+            <Option value="7" >Pink           </Option>
+            <Option value="8" >Gray           </Option>
+            <Option value="9" >Light Gray     </Option>
+            <Option value="10">Cyan           </Option>
+            <Option value="11">Purple         </Option>
+            <Option value="12">Blue           </Option>
+            <Option value="13">Brown          </Option>
+            <Option value="14">Green          </Option>
+            <Option value="15">Red            </Option>
+            <Option value="16">Black          </Option>
+        </Dropdown>
+
+        <Label X="$application.width / 2 - #self.text / 2" Y=14 class="confirmation" id="color_confirm_message">-</Label>
+
+        <Button X=2 Y=18 width=10 id="reset_button">Reset</Button>
+        <Button X="$application.width / 2 - 5" Y=18 width=11 id="exit_button" visible="false" enabled="false">Exit</Button>
+        <Button X=41 Y=18 width=10 id="color_next_button" class="page_change" targetPage="details" enabled="false">Next</Button>
+    </Page>
+
+    <Page id="details" name="Details" xScrollAllowed="false">
+        <Label X=2 Y=2 class="header">Ender Registry</Label>
+        <Label X=2 Y=3 class="sub">Enter your details</Label>
+
+        <Label X=2 Y=6 labelFor="name_input">Player Name</Label>
+        <Input X=2 Y=7 width="$parent.width / 2 - 2" limit=20 id="name_input" focused="true" />
+
+        <Label X="$parent.width / 2 + 1" Y=6 labelFor="desc_input">Description</Label>
+        <EditableTextContainer X="$parent.width / 2 + 1" Y=7 width="$parent.width / 2 - 2" limit=100 height=5 limit=100 id="desc_input" horizontalAlign="left" />
+
+        <Label X="$application.width / 2 - #self.text / 2" Y=14 class="error" id="details_confirm_message">-</Label>
+
+        <Button X=2 Y=18 width=10 class="page_change" targetPage="colors">Back</Button>
+        <Button X=41 Y=18 width=10 id="details_next_button" class="page_change" targetPage="finish" enabled="false">Next</Button>
+    </Page>
+
+    <Page id="finish" name="Finish" xScrollAllowed="false">
+        <Label X=2 Y=2 class="header">Ender Registry</Label>
+        <Label X=2 Y=3 class="sub">Check the given information</Label>
+
+        <Label X=2 Y=6>Player Name:</Label>
+        <Label X=2 Y=7 id="name_display">-</Label>
+
+        <Label X="$parent.width / 2 + 1" Y=6>Description:</Label>
+        <TextContainer X="$parent.width / 2 + 1" Y=7 width="$parent.width / 2 - 2" height=5 backgroundColour="white" id="description_display">-</TextContainer>
+
+        <Label X=2 Y=9>Colors:</Label>
+        <TextContainer X=2 Y=10 width="$parent.width / 2 - 2" height=2 backgroundColour="white" id="color_display">-</TextContainer>
+
+        <Label X="$application.width / 2 - #self.text / 2" Y=14 class="confirmation" id="finish_message">-</Label>
+
+        <Button X=2 Y=18 width=10 id="back_button" class="page_change" targetPage="details">Back</Button>
+        <Button X=41 Y=18 width=10 id="done_button">Done</Button>
+    </Page>
+</TabbedPageContainer>

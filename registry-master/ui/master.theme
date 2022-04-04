@@ -1,0 +1,80 @@
+<Label class="sub">
+    <colour>lightGrey</colour>
+</Label>
+
+<Label class="header">
+    <colour important>cyan</colour>
+</Label>
+
+<Label class="hasValue">
+    <colour important>128</colour>
+</Label>
+
+<Label class="held">
+    <colour>red</colour>
+</Label>
+
+<Label class="active">
+    <colour important>lime</colour>
+</Label>
+
+<Label class="confirmation">
+    <colour>lime</colour>
+</Label>
+
+<Label class="error">
+    <colour>red</colour>
+</Label>
+
+<Pane>
+    <backgroundColour>lightGrey</backgroundColour>
+</Pane>
+
+<Button>
+    <backgroundColour>cyan</backgroundColour>
+    <activeBackgroundColour>lightBlue</activeBackgroundColour>
+    <colour>white</colour>
+    <verticalAlign>centre</verticalAlign>
+    <horizontalAlign>centre</horizontalAlign>
+    <width dynamic>#self.text + 2</width>
+</Button>
+
+<RadioButton>
+    <backgroundColour>128</backgroundColour>
+    <activeBackgroundColour>256</activeBackgroundColour>
+
+    <toggledBackgroundColour>cyan</toggledBackgroundColour>
+    <toggledColour>white</toggledColour>
+</RadioButton>
+
+<Input>
+    <backgroundColour>128</backgroundColour>
+    <colour>256</colour>
+
+    <focusedBackgroundColour>256</focusedBackgroundColour>
+    <focusedColour>128</focusedColour>
+</Input>
+
+<EditableTextContainer>
+    <backgroundColour>128</backgroundColour>
+    <colour>256</colour>
+
+    <focusedBackgroundColour>256</focusedBackgroundColour>
+    <focusedColour>128</focusedColour>
+</EditableTextContainer>
+
+<ScrollContainer>
+    <Checkbox>
+        <backgroundColour>cyan</backgroundColour>
+        <toggledBackgroundColour>lightGrey</toggledBackgroundColour>
+        <activeBackgroundColour>lightBlue</activeBackgroundColour>
+
+        <toggledColour>white</toggledColour>
+        <X>11</X>
+    </Checkbox>
+
+    <Label>
+        <colour>256</colour>
+        <X>2</X>
+    </Label>
+</ScrollContainer>
